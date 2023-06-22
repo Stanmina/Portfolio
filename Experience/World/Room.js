@@ -10,9 +10,10 @@ export default class Room{
         this.actualRoom = this.room.scene;
 
         this.setModel()
-    }   
+    }
 
     setModel(){
+        // console.log(this.room.scene)
         this.actualRoom.children.forEach((child) => {
             child.castShadow = true;
             child.receiveShadow = true;
@@ -21,8 +22,18 @@ export default class Room{
                 child.children.forEach((groupChild) => {
                     groupChild.castShadow = true;
                     groupChild.receiveShadow = true;
+
+                    // NTS
+                    // update names in blender
+                    if(groupChild.name === "Cube019_1" || groupChild.name === "Cube021_1"){
+                        groupChild.material = new THREE.MeshBasicMaterial({
+                            map: this.resources.items.screen,
+                        });
+                    }
                 })
             }
+
+
         });
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(.75, .75, .75);
