@@ -6,6 +6,8 @@ import Time from './Utils/Time';
 import World from './World/World';
 import Resources from './Utils/Resources';
 import assets from './Utils/assets';
+import Controls from './World/Controls';
+import Room from './World/Room';
 
 export default class Experience{
     static instance
@@ -22,6 +24,7 @@ export default class Experience{
         this.renderer = new Renderer(); 
         this.resources = new Resources(assets);
         this.world = new World();
+        this.controls = new Controls();
 
         this.time.on("update", () => {
             this.update();
@@ -39,5 +42,6 @@ export default class Experience{
     update(){
         this.camera.update();
         this.renderer.update();
+        this.controls.update();
     }
 }

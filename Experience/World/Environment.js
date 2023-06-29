@@ -17,7 +17,7 @@ export default class Environment{
         this.sunLight.shadow.mapSize.set(2048, 2048);
         this.sunLight.shadow.normalBias = 0.05;
         
-        // Shadow helper, shows the direction of the shadows
+        //// Shadow helper, shows the direction of the shadows
         // const helper = new THREE.CameraHelper(this.sunLight.shadow.camera);
         // this.scene.add(helper);
         
@@ -31,6 +31,6 @@ export default class Environment{
     resize(){
     }
 
-    update (){
+    update(){
     }
 }
