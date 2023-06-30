@@ -21,7 +21,6 @@ export default class Room{
     }
 
     setModel(){
-        // console.log(this.room.scene)
         this.actualRoom.children.forEach((child) => {
             child.castShadow = true;
             child.receiveShadow = true;
