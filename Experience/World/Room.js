@@ -42,8 +42,8 @@ export default class Room{
             }
         });
         this.scene.add(this.actualRoom);
-        this.actualRoom.position.y = 2;
-        this.actualRoom.scale.set(.4, .4, .4);
+        this.actualRoom.position.y = 2.5;
+        this.actualRoom.scale.set(.3, .3, .3);
     }
 
     onMouseMove(){
@@ -58,7 +58,7 @@ export default class Room{
     }
 
     update(){
-        console.log("test");
+        console.log("Room update()");
         this.lerp.current = GSAP.utils.interpolate(
             this.lerp.current,
             this.lerp.target,
