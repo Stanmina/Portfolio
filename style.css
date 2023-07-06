@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Oxygen", sans-serif;
   color: var(--color-text-light);
 }
@@ -13,24 +14,24 @@ html, body {
 h1,
 p,
 span,
-svg{
+svg {
   transition: background-color 0.5s, color 0.5s;
 }
 
-:root{
+:root {
   /* light theme */
   --color-text-light: #333333;
-  --color-background-light: #FAF4E5;
-  --color-pink-light: #E5A1AA;
-  --color-green-light: #7AD0AC;
-  --color-blue-light: #8395CD;
+  --color-background-light: #faf4e5;
+  --color-pink-light: #e5a1aa;
+  --color-green-light: #7ad0ac;
+  --color-blue-light: #8395cd;
 
   /* dark theme */
-  --color-text-dark: #FAF4E5;
-  --color-background-dark: #8395CD;
+  --color-text-dark: #faf4e5;
+  --color-background-dark: #8395cd;
 }
 
-.light-theme{
+.light-theme {
   --color-text: var(--color-text-light);
   --color-background: var(--color-background-light);
   --color-pink: var(--color-pink-light);
@@ -38,14 +39,13 @@ svg{
   --color-blue: var(--color-blue-light);
 }
 
-.dark-theme{
+.dark-theme {
   --color-text: var(--color-text-dark);
   --color-background: var(--color-background-dark);
   --color-pink: var(--color-text-dark);
   --color-green: var(--color-text-dark);
   --color-blue: var(--color-text-dark);
 }
-
 
 /* Experience -------- */
 
@@ -62,20 +62,20 @@ svg{
 
 /* Page -------- */
 
-.page{
+.page {
   z-index: 99999;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.page-wrapper{
+.page-wrapper {
   position: relative;
 }
 
 /* Togglebar -------- */
 
-.toggle-bar{
+.toggle-bar {
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -86,7 +86,8 @@ svg{
   z-index: 999999999;
 }
 
-.sun-wrapper, .moon-wrapper{
+.sun-wrapper,
+.moon-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -94,7 +95,7 @@ svg{
   color: var(--color-text);
 }
 
-.toggle-button{
+.toggle-button {
   cursor: pointer;
   position: relative;
   width: 56px;
@@ -109,7 +110,7 @@ svg{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.toggle-circle{
+.toggle-circle {
   position: absolute;
   left: 6px;
   border-radius: 50%;
@@ -119,49 +120,49 @@ svg{
   transition: all 0.2s ease-in-out;
 }
 
-.toggle-button:hover .toggle-circle{
+.toggle-button:hover .toggle-circle {
   transform: scale(0.9);
 }
 
-.slide{
+.slide {
   left: 28px;
 }
 
 /* Section formatting -------- */
 
-.section-margin{
+.section-margin {
   height: 3000px;
   width: 100%;
 }
 
-.section{
+.section {
   width: 50%;
   padding: 1000px 4%;
   margin: 0;
   background-color: var(--color-background);
 }
 
-.left{
+.left {
   margin-right: auto;
 }
 
-.right{
+.right {
   margin-left: auto;
 }
 
-.section-intro-wrapper{
+.section-intro-wrapper {
   position: relative;
   padding: 20% 5%;
   border-bottom: 2px solid var(--color-pink);
   padding-bottom: 400px;
 }
 
-.section-detail-wrapper{
+.section-detail-wrapper {
   position: relative;
   padding: 20% 5%;
 }
 
-.section-heading{
+.section-heading {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
@@ -169,7 +170,7 @@ svg{
   color: var(--color-text);
 }
 
-.section-text{
+.section-text {
   line-height: 2;
   margin-top: 18px;
   font-size: 16px;
@@ -178,12 +179,12 @@ svg{
 
 /* Decoration -------- */
 
-.section-title{
+.section-title {
   position: relative;
   color: var(--color-pink);
 }
 
-.section-title-text{
+.section-title-text {
   display: block;
   font-size: 40px;
   font-weight: 500;
@@ -196,7 +197,7 @@ svg{
 
 .styleOne,
 .styleTwo,
-.styleThree{
+.styleThree {
   position: absolute;
   display: block;
   width: 100%;
@@ -207,21 +208,21 @@ svg{
   transform: skewY(-25deg);
 }
 
-.styleOne{
+.styleOne {
   top: 0px;
 }
 
-.styleTwo{
+.styleTwo {
   top: 80px;
 }
 
-.styleThree{
+.styleThree {
   top: 80px;
   transform: skewY(25deg);
   background-color: var(--color-pink);
 }
 
-.section-number{
+.section-number {
   position: absolute;
   bottom: 15px;
   right: 0;
@@ -230,12 +231,12 @@ svg{
 }
 /* Hero -------- */
 
-.hero{
+.hero {
   width: 100vw;
   height: 100vh;
 }
 
-.hero-wrapper{
+.hero-wrapper {
   position: relative;
   height: 100%;
   width: calc(100% - 160px);
@@ -243,31 +244,31 @@ svg{
   max-width: 1100px;
 }
 
-.hero-main{
+.hero-main {
   position: absolute;
   bottom: 170px;
   left: 0;
   color: var(--color-text);
 }
 
-.hero-second{
+.hero-second {
   position: absolute;
   top: calc(50% - 120px);
   right: 160px;
   color: var(--color-text);
 }
 
-.hero-main-title{
+.hero-main-title {
   font-size: 64px;
   color: var(--color-text);
 }
 
-.hero-main-description{
+.hero-main-description {
   font-size: 18px;
   color: var(--color-text);
 }
 
-.hero-second-subheading{
+.hero-second-subheading {
   font-size: 32px;
   text-transform: uppercase;
   color: var(--color-text);
@@ -275,30 +276,42 @@ svg{
 
 /* Other colors */
 
-.blue-text{
+.blue-text {
   color: var(--color-blue);
 }
-.blue-border{
+.blue-border {
   border-color: var(--color-blue);
 }
-.blue-background{
+.blue-background {
   background-color: var(--color-blue);
 }
 
-.green-text{
+.green-text {
   color: var(--color-green);
 }
-.green-border{
+.green-border {
   border-color: var(--color-green);
 }
-.green-background{
+.green-background {
   background-color: var(--color-green);
 }
 
 /* Media Queries */
 
-@media (max-width: 968px){
-  .section{
+@media (max-width: 968px) {
+  .section {
     width: 100%;
+  }
+
+  .hero-main {
+    bottom: 140px;
+  }
+
+  .hero-main-title {
+    font-size: 32px;
+  }
+
+  .hero-second {
+    right: 0;
   }
 }

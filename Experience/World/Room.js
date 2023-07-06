@@ -57,7 +57,7 @@ export default class Room{
     }
 
     update(){
-        console.log("Room update()");
+        // console.log("Room update()");
         this.lerp.current = GSAP.utils.interpolate(
             this.lerp.current,
             this.lerp.target,

@@ -44,10 +44,11 @@ export default class Resources extends EventEmitter{
                 this.video[asset.name].playsInline = true;
                 this.video[asset.name].autoplay = false;
                 this.video[asset.name].loop = true;
-                // this.video[asset.name].play();
+                this.video[asset.name].play();
 
                 this.videoTexture[asset.name] = new THREE.VideoTexture(this.video[asset.name]);
                 this.videoTexture[asset.name].flipY = false;
+                this.videoTexture[asset.name].flipX = true;
                 this.videoTexture[asset.name].minFilter = THREE.NearestFilter;
                 this.videoTexture[asset.name].mageFilter = THREE.NearestFilter;
                 this.videoTexture[asset.name].generateMipmaps = false;
